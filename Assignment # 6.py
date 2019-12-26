@@ -3,20 +3,16 @@
 #And create 5 object instance from that class.
 
 class Car:
-    def __init__(self,model,color,name,wheel,seats):
+    def __init__(self,model,color,year,wheel,seats):
         self.model=model
         self.color=color
-        self.name=name
+        self.year=year
         self.wheel=wheel
         self.seats=seats
-    def truck(Car,model,color,name,wheel,seats):
-        super().__init__(model,color,name,wheel,seats)
-    def taxi(Car):
-        super().__init__(model,color,name,wheel,seats)
-    def rickshaw(Car):
-        super().__init__(model,color,name,wheel,seats)
 
-car=Car('BMW','red','HERO',4,4)
-car.truck()
-car.taxi()
-car.rickshaw()
+bmw=Car('BMW','Blue','2000','4','4')
+ferrari=Car('Ferrari','red','1999','4','4')
+honda=Car('Honda','Black','2009','4','5')
+print(ferrari.color)
+print(honda.seats)
+
